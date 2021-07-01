@@ -30,6 +30,14 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+.card-header {
+  text-align: center;
+}
+
+.text-area {
+  border: solid black 5px;
+}
+
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -40,6 +48,12 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+}
+
+.selections {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
 }
 
 .card-header::after {

@@ -10,20 +10,23 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Password Generator</h1>
+        <h1></h1>
       </header>
+
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
 
         <div class="card-body">
+          <div class= "password-text">
           <textarea
             readonly
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
+          </div>
           <div class="selections">
             <div class="option">
               <label>Length of Password</label>
@@ -42,8 +45,8 @@
               <input type="checkbox" id="numbers">
             </div>
             <div class="option">
-              <label>Include Special Characters</label>
-              <input type="checkbox" id="specialchar">
+              <label>Include Symbols</label>
+              <input type="checkbox" id="symbols">
             </div>
           </div>
         </div>
