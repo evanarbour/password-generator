@@ -35,7 +35,7 @@ function writePassword() {
 // We then pass on that data to the "Generate Password" function that randomizes and creates the password.
 function generatePassword(length, characterString) {
   var password = '';
-  // create a "for loop" to add on a random character from the characterString we created, onto the password variable for the length of the user input.
+  // create a "for loop" to select a random character from the characterString we created, then add it onto the password variable - for the length of the user input.
   for (let i = 0; i < length; i++) {
     password += characterString.charAt(
       Math.floor(Math.random() * characterString.length)

@@ -39,7 +39,7 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(200, 52%, 78%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -50,28 +50,54 @@ header {
   padding: 30px 40px;
 }
 
+#password {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;*/
+  /* display: block; */
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  resize: none;
+  overflow: hidden;
+}
+
+.password-text {
+  border: solid 1px black;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
 .selections {
   display: grid;
   grid-template-columns: auto auto;
   row-gap: 1rem;
 }
 
-.card-header::after {
+/* .card-header::after {
   content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
-}
+} */
 
 .card-body {
   min-height: 100px;
 }
 
 .card-footer {
+  display: flex;
+  justify-content: center;
+
   text-align: center;
 }
-
+/* 
 .card-footer::before {
   content: " ";
   display: block;
@@ -84,11 +110,11 @@ header {
   content: " ";
   display: block;
   clear: both;
-}
+} */
 
 .btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
+  border: 2px solid white;
+  background-color: hsl(200, 52%, 78%);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -100,6 +126,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  width: 100%;
 }
 
 button[disabled] {
@@ -109,27 +136,6 @@ button[disabled] {
 
 .float-right {
   float: right;
-}
-
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
 }
 
 @media (max-width: 690px) {
