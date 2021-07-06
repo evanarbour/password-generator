@@ -10,3 +10,9 @@ that executed the steps I laid out for myself. I kept working through this proce
 
 Once I finished writing the javascript code, I styled via CSS. I wanted a clean,
 professional look to the page with easy to read-text and user interaction. I decided to use checkboxes instead of window prompts because it's easier for the user to see which parameters they've put on their password and can more easily change it.
+
+![password generator](./images/password-generator-pic.png)
+
+## Link to Application
+
+Click [here](https://evanarbour.github.io/password-generator/) to open the Password Generator.
