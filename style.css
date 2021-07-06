@@ -32,6 +32,9 @@ header {
 
 .card-header {
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: bold;
+  font-size: 40px;
 }
 
 .text-area {
@@ -44,7 +47,7 @@ header {
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
@@ -74,8 +77,10 @@ header {
 }
 
 .selections {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
   row-gap: 1rem;
 }
 
@@ -94,23 +99,8 @@ header {
 .card-footer {
   display: flex;
   justify-content: center;
-
   text-align: center;
 }
-/* 
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-} */
 
 .btn {
   border: 2px solid white;
@@ -132,6 +122,10 @@ header {
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
+}
+
+.btn:hover {
+  background-color: rgb(203, 222, 231);
 }
 
 .float-right {
